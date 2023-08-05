@@ -19,10 +19,6 @@ const Contact = () => {
             className='flex-1 flex items-center mx-auto text-center lg:text-start'
           >
             <div>
-              <h4 className='text-xl uppercase text-accent 
-              font-medium mb-2 tracking-wide hover:text-gradient'>
-                Trabajemos Juntos
-              </h4>
               <h2 className='text-gradient font-bold text-[45px] lg:text-[90px] leading-none mb-2'>
                 Estemos en <br /> Contacto!
               </h2>

@@ -12,6 +12,7 @@ import Marketing from './pages/Marketing';
 import Webdevelopment from './pages/Webdevelopment';
 import Rugby from './pages/Rugby';
 import Navbar from './components/Navbar';
+import Actividades from './pages/Actividades';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/marketing' element={<Marketing/>} />
         <Route path='/webdevelopment' element={<Webdevelopment/>} />
         <Route path='/rugby' element={<Rugby/>} />
+        <Route path='/actividades' element={<Actividades/>} />
       </Routes>
       <Contact />
     </div>

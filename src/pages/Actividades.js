@@ -3,8 +3,7 @@ import React from 'react'
 import topImage from '../assets/rugbyHeader3.jpg';
 import rugbySuperior from '../assets/rugbySuperior.png'
 import rugbyJuvenil from '../assets/rugbyJuvenil.png'
-import rugbyInfantil from '../assets/rugbyInfantil.png'
-import rugbyInclusivo from '../assets/rugbyInclusivo.png'
+import rugbyInfantil from '../assets/hockeyInfantil.png'
 // motion
 import { motion } from 'framer-motion';
 // variants
@@ -14,36 +13,30 @@ const rugby = [
   
     
     {
-      name: 'Juveniles',
+      name: 'Rugby',
       description:
        'Lunes: 20hs-22hs / Martes y Jueves: 20:30hs-22:30hs',
       link: '/rugby',
       cardimage: rugbyJuvenil,
     },
     {
-      name: 'Infantiles',
+      name: 'Hockey',
       description:
        'Martes y Jueves: 20:30hs-22:30hs / Sabados 10hs-12hs',
       link: '/hockey',
       cardimage: rugbyInfantil,
     },
     {
-      name: 'Plantel Superior',
+      name: 'Transporte',
       description:
        'Lunes: 20hs-22hs / Martes y Jueves: 20:30hs-22:30hs',
       link: '/transporte',
       cardimage: rugbySuperior,
-    },
-    {
-        name:'Inclusivo',
-        description: 
-        'Sábados 10hs-12hs',
-        cardimage: rugbyInclusivo,
     }
     
   ]
 
-const Rugby = () => {
+const Actividades = () => {
   return (
     <>
 
@@ -120,4 +113,4 @@ const Rugby = () => {
   )
 }
 
-export default Rugby
+export default Actividades

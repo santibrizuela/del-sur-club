@@ -36,7 +36,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 text-center lg:text-start'
           >
-            <h2 className='h2 text-gradient w-max'>About us.</h2>
+            <h2 className='h2 text-gradient'>Del Sur Club</h2>
             <h3 className='h3 mb-4'>
               Nos dedicamos al <a href='/branding' className='text-gradient'>Diseño Gráfico</a>,
               <a href='/webdevelopment' className='text-gradient'> Desarrollo Web</a> y 
@@ -47,7 +47,7 @@ const About = () => {
               Creamos soluciones impactantes y auténticas que conectan con tu audiencia y generan resultados excepcionales.
             </p>
             {/* stats */}
-            <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+            <div className='flex gap-x-6 lg:gap-x-10 mb-12 justify-around'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient
                 mb-2'>

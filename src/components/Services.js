@@ -10,23 +10,24 @@ import {fadeIn} from '../variants'
 const services = [
   
   
-  {
-    name: 'Transporte',
-    description:
-     'Diseño Gráfico, Paleta de Colores, Logotipo, Imagotipo. Diseñamos el logo y la estética de tu marca desde cero. Es el punto de partida para digitalizar una marca.',
-    link: '/transporte',
-  },
+  
   {
     name: 'Rugby',
     description:
-     'Diseño Web, UX/UI, Dominios, Correo Empresarial. Te diseñamos un sitio web con información de tu marca (Contacto, Locales, Horarios) y lo ponemos en línea con Vercel o DNS.',
+     'Vení a jugar al rugby y sumate en nuestras categorías en Infantiles (6-14 años), Juveniles(15-19 años) o Plantel Superior.',
     link: '/rugby',
   },
   {
     name: 'Hockey',
     description:
-     'Social Media, Campaña de Seguidores, Plantillas (Feed-Historias), Link/QR. Creamos/Desarrollamos perfiles en redes sociales en las que la Marca tenga un potencial impacto.',
+     'Vení a jugar al hockey y sumate en nuestras categorías en Infantiles (6-14 años), Juveniles(15-19 años) o Plantel Superior..',
     link: '/hockey',
+  },
+  {
+    name: 'Transporte',
+    description:
+     'Contamos con servicio de transporte idea y vuelta con paradas en los barrios Parque Chacabuco, Lugano, Celina, Madero y Tapiales.',
+    link: '/transporte',
   }
   
 ]
@@ -42,17 +43,17 @@ const Services = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
-          className='flex-1 lg:bg-services lg-bg-bottom bg-no-repeat 
+          className='flex-1 
           mix-blend-lighten mb-12 lg:mb-0  text-center lg:text-start'
         >
-          <h2 className='h2 font-bold text-lime-100 my-4'>Encontranos</h2>
-          <h3 className='h3 lg:max-w-[455px] lg:mb-48'>
-            Diseñamos un <a href='/branding' className='text-gradient text-lime-200'>Logo</a> acorde 
-            a tu marca, creamos una <a href='/webdevelopment' className='text-gradient text-lime-200'>Web</a> y 
-            aplicamos estrategias de <a href='/marketing' className='text-gradient text-lime-200'>Marketing</a> en las redes.
+          <h2 className='h2 font-bold text-yellow-400 my-4'>Te Buscamos</h2>
+          <h3 className='h3 lg:max-w-[455px] lg:mb-10'>
+            Tenemos<a href='/transporte' className='text-gradient'> Servicio de bus</a> ida y vuelta para que  
+            vengas a hacer tus<a href='/actividades' className='text-gradient'> Actividades</a> al club.
+             
           </h3>
-          <a href='/work'>
-            <button className='btn btn-sm'>Ver Últimos Trabajos</button>
+          <a href='/transporte'>
+            <button className='btn'>Ver mas</button>
           </a>
           
         </motion.div>
@@ -77,7 +78,7 @@ const Services = () => {
                 >
                   <div className='max-w-[476px]'>
                     <a href={link}>
-                      <h4 className='text-lime-200 text-[2rem] tracking-wider font-primary 
+                      <h4 className='text-gradient text-[2rem] tracking-wider w-min font-primary 
                       font-bold mb-6 uppercase'>
                         {name}
                       </h4>
@@ -94,7 +95,7 @@ const Services = () => {
                     >
                       <BsArrowUpRight />
                     </a>
-                    <a href={link} className='text-lime-200 font-bold text-sm'>
+                    <a href={link} className='text-gradient font-bold text-sm'>
                       Ver Más
                     </a>
                   </div>
