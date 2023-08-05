@@ -23,7 +23,7 @@ const Contact = () => {
               font-medium mb-2 tracking-wide hover:text-gradient'>
                 Trabajemos Juntos
               </h4>
-              <h2 className='text-lime-200 font-bold text-[45px] lg:text-[90px] leading-none mb-2'>
+              <h2 className='text-gradient font-bold text-[45px] lg:text-[90px] leading-none mb-2'>
                 Estemos en <br /> Contacto!
               </h2>
               

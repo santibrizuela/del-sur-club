@@ -11,22 +11,22 @@ const services = [
   
   
   {
-    name: 'Desarrollo de Marca',
+    name: 'Transporte',
     description:
      'Diseño Gráfico, Paleta de Colores, Logotipo, Imagotipo. Diseñamos el logo y la estética de tu marca desde cero. Es el punto de partida para digitalizar una marca.',
-    link: '/branding',
+    link: '/transporte',
   },
   {
-    name: 'Desarrollo Web',
+    name: 'Rugby',
     description:
      'Diseño Web, UX/UI, Dominios, Correo Empresarial. Te diseñamos un sitio web con información de tu marca (Contacto, Locales, Horarios) y lo ponemos en línea con Vercel o DNS.',
-    link: '/webdevelopment',
+    link: '/rugby',
   },
   {
-    name: 'Marketing Digital',
+    name: 'Hockey',
     description:
      'Social Media, Campaña de Seguidores, Plantillas (Feed-Historias), Link/QR. Creamos/Desarrollamos perfiles en redes sociales en las que la Marca tenga un potencial impacto.',
-    link: '/marketing',
+    link: '/hockey',
   }
   
 ]
@@ -45,7 +45,7 @@ const Services = () => {
           className='flex-1 lg:bg-services lg-bg-bottom bg-no-repeat 
           mix-blend-lighten mb-12 lg:mb-0  text-center lg:text-start'
         >
-          <h2 className='h2 font-bold text-lime-100 my-4'>¿Cómo <br/>Digitalizamos <br/>tu Marca?</h2>
+          <h2 className='h2 font-bold text-lime-100 my-4'>Encontranos</h2>
           <h3 className='h3 lg:max-w-[455px] lg:mb-48'>
             Diseñamos un <a href='/branding' className='text-gradient text-lime-200'>Logo</a> acorde 
             a tu marca, creamos una <a href='/webdevelopment' className='text-gradient text-lime-200'>Web</a> y 
@@ -77,8 +77,8 @@ const Services = () => {
                 >
                   <div className='max-w-[476px]'>
                     <a href={link}>
-                      <h4 className='text-lime-200 text-[20px] tracking-wider font-primary 
-                      font-bold mb-6'>
+                      <h4 className='text-lime-200 text-[2rem] tracking-wider font-primary 
+                      font-bold mb-6 uppercase'>
                         {name}
                       </h4>
                     </a>

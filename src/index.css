@@ -36,13 +36,13 @@ html{
     @apply rounded-full font-primary text-white font-medium inline-block p-2 shadow-xl uppercase;
   }
   .btn:hover {
-    @apply bg-gradient-to-r from-sky-400 via-yellow-400 to-white text-blue-950 border-sky-400 shadow-sm;
+    @apply bg-gradient-to-r from-sky-600 to-yellow-600 text-gray-100 border-sky-600 shadow-sm;
   }
   .btn-outline{
-    @apply border-2 p-2 inline-block bg-transparent rounded-full uppercase border-sky-400;
+    @apply border-2 p-2 inline-block bg-transparent uppercase border-sky-600 text-gradient;
   }
   .btn-outline:hover{
-    @apply bg-gradient-to-r from-sky-400 via-yellow-400 to-white  border-sky-400;
+    @apply bg-gradient-to-r from-sky-600 to-yellow-600 border-sky-600;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
@@ -54,18 +54,18 @@ html{
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r from-sky-400 via-yellow-400 to-white text-transparent bg-clip-text  font-bold font-primary hover:from-[#bef264] hover:to-[#10B981];
+    @apply bg-gradient-to-r from-sky-600 to-yellow-600 text-transparent bg-clip-text  font-bold font-primary hover:from-yellow-600 hover:to-sky-600;
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .icon-color{
-    @apply text-yellow-400 hover:text-black;
+    @apply text-sky-600 hover:text-yellow-600;
   }
   .text-lime-200{
     @apply hover:text-gradient;
   }
   .menuNav{
-    @apply hover:text-yellow-400
+    @apply hover:text-yellow-600
   }
 }

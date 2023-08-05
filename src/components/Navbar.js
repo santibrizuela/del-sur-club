@@ -32,8 +32,8 @@ const Navbar = () => {
               className=''
               src={brandLogo} 
               alt='Ferretería Divano' 
-              width={80} 
-              height={48}
+              width={100} 
+              height={60}
               />
             </a>            
 
@@ -121,7 +121,7 @@ const Navbar = () => {
                 <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                   <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/'>
                     <div onClick={handleNav} className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
-                      <AiOutlineLinkedin/>
+                      <AiOutlineLinkedin className='menuNav'/>
                     </div>
                   </a>
                   <a target='_blank' rel="noreferrer" href='https://www.instagram.com/'>
