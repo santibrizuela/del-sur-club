@@ -1,10 +1,7 @@
 import React from 'react'
 // image
 import topImage from '../assets/rugbyHeader3.jpg';
-import rugbySuperior from '../assets/rugbySuperior.png'
-import rugbyJuvenil from '../assets/rugbyJuvenil.png'
-import rugbyInfantil from '../assets/rugbyInfantil.png'
-import rugbyInclusivo from '../assets/rugbyInclusivo.png'
+import hockeyInfantil from '../assets/hockeyInfantil.png'
 // motion
 import { motion } from 'framer-motion';
 // variants
@@ -18,32 +15,32 @@ const rugby = [
       description:
        'Lunes: 20hs-22hs / Martes y Jueves: 20:30hs-22:30hs',
       link: '/rugby',
-      cardimage: rugbyJuvenil,
+      cardimage: hockeyInfantil,
     },
     {
       name: 'Infantiles',
       description:
        'Martes y Jueves: 20:30hs-22:30hs / Sabados 10hs-12hs',
       link: '/hockey',
-      cardimage: rugbyInfantil,
+      cardimage: hockeyInfantil,
     },
     {
       name: 'Plantel Superior',
       description:
        'Lunes: 20hs-22hs / Martes y Jueves: 20:30hs-22:30hs',
       link: '/transporte',
-      cardimage: rugbySuperior,
+      cardimage: hockeyInfantil,
     },
     {
         name:'Inclusivo',
         description: 
         'Sábados 10hs-12hs',
-        cardimage: rugbyInclusivo,
+        cardimage: hockeyInfantil,
     }
     
   ]
 
-const Rugby = () => {
+const Hockey = () => {
   return (
     <>
 
@@ -60,7 +57,7 @@ const Rugby = () => {
                 <div className='absolute top-30 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10'/>
                 <img className='h-full w-full object-cover z-1' src={topImage} alt='Green Card & Visa'/>
                 <div className='absolute top-[14%] lg:top-[24%] max-w-[1240px] w-full text-white z-20 p-2 text-left'>
-                    <h2 className='py-2 font-bold text-gradient text-[2.6rem] uppercase w-min'>Rugby</h2>
+                    <h2 className='py-2 font-bold text-gradient text-[2.6rem] uppercase w-min'>Hockey</h2>
                     
                 </div>
             </motion.div>
@@ -119,4 +116,4 @@ const Rugby = () => {
   )
 }
 
-export default Rugby
+export default Hockey

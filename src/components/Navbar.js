@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import {AiOutlineClose, AiOutlineMenu, AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram} from 'react-icons/ai'
-import {BsPersonVcard} from 'react-icons/bs'
+import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import brandLogo from '../assets/dsrEscudo.png'
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { ImLocation } from 'react-icons/im'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -59,7 +60,7 @@ const Navbar = () => {
                 <a href='/rugby'>
                   <li className='ml-10 text-sm uppercase menuNav'>Rugby</li>
                 </a>
-                <a href='/CatalogoFull'>
+                <a href='/hockey'>
                   <li className='ml-10 text-sm uppercase menuNav'>Hockey</li>
                 </a>
                 <a href='/#contact'>
@@ -109,7 +110,7 @@ const Navbar = () => {
                 <a href='/rugby'>
                 <li onClick={()=> setNav(false)} className='py-4 text-sm menuNav'>Rugby</li>
                 </a>
-                <a href='/CatalogoFull'>
+                <a href='/hockey'>
                 <li onClick={()=> setNav(false)} className='py-4 text-sm menuNav'>Hockey</li>
                 </a>                
                 <a href='/#contact'>
@@ -119,27 +120,21 @@ const Navbar = () => {
               <div className='pt-30'>
                 <p className='uppercase tracking-widest pt-10'>Conectemos</p>
                 <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                  <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/'>
-                    <div onClick={handleNav} className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
-                      <AiOutlineLinkedin className='menuNav'/>
-                    </div>
-                  </a>
-                  <a target='_blank' rel="noreferrer" href='https://www.instagram.com/'>
-                    <div onClick={handleNav} className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
-                      <AiOutlineInstagram/>
-                    </div>
-                  </a>
-                  <a href='/#contact'>
-                    <div onClick={handleNav} className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
-                      <AiOutlineMail/>
-                    </div>
-                  </a>
-                  
-                  <a href='/#portfolio'>
-                    <div onClick={handleNav} className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
-                      <BsPersonVcard/>
-                    </div>
-                  </a>
+                    <a target='_blank' rel='noreferrer' href='https://www.whatsapp.com/'>
+                        <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
+                            <FaWhatsapp/>
+                        </div>
+                    </a>
+                    <a target='_blank' rel='noreferrer' href='https://www.instagram.com/delsurclub/'>
+                        <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
+                            <FaInstagram/>
+                        </div>
+                    </a>    
+                    <a target='_blank' rel='noreferrer' href='#contact'>
+                        <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
+                            <ImLocation/>
+                        </div>
+                    </a>
                   
                 </div>
               </div>

@@ -3,14 +3,12 @@ import React from 'react';
 import WhatsappScroll from './components/WhatsappScroll';
 import About from './components/About';
 import Services from './components/Services';
-import Work from './components/Work';
 import Contact from './components/Contact';
 import { Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Marketing from './pages/Marketing';
-import Webdevelopment from './pages/Webdevelopment';
 import Rugby from './pages/Rugby';
+import Hockey from './pages/Hockey';
+import Transporte from './pages/Transporte';
 import Navbar from './components/Navbar';
 import Actividades from './pages/Actividades';
 
@@ -24,11 +22,9 @@ const App = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/services' element={<Services/>} />
-        <Route path='/work' element={<Work/>} />
-        <Route path='/portfolio' element={<Portfolio/>} />
-        <Route path='/marketing' element={<Marketing/>} />
-        <Route path='/webdevelopment' element={<Webdevelopment/>} />
         <Route path='/rugby' element={<Rugby/>} />
+        <Route path='/hockey' element={<Hockey/>} />
+        <Route path='/transporte' element={<Transporte/>} />
         <Route path='/actividades' element={<Actividades/>} />
       </Routes>
       <Contact />

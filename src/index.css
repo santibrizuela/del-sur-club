@@ -54,10 +54,10 @@ html{
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r from-sky-400 to-yellow-400 text-transparent bg-clip-text  font-bold font-primary;
+    @apply bg-gradient-to-r from-sky-600 to-yellow-600 text-transparent bg-clip-text  font-bold font-primary;
   }
   .text-gradient:hover{
-    @apply bg-gradient-to-l from-sky-400 to-yellow-400 ease-in duration-300;
+    @apply bg-gradient-to-l from-sky-600 to-yellow-600 ease-in duration-300;
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;

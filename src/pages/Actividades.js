@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 // rugby data
-const rugby = [
+const actividades = [
   
     
     {
@@ -29,7 +29,7 @@ const rugby = [
     {
       name: 'Transporte',
       description:
-       'Lunes: 20hs-22hs / Martes y Jueves: 20:30hs-22:30hs',
+       'Martes y Jueves: 20:30hs-22:30hs',
       link: '/transporte',
       cardimage: rugbySuperior,
     }
@@ -53,15 +53,14 @@ const Actividades = () => {
                 <div className='absolute top-30 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10'/>
                 <img className='h-full w-full object-cover z-1' src={topImage} alt='Green Card & Visa'/>
                 <div className='absolute top-[14%] lg:top-[24%] max-w-[1240px] w-full text-white z-20 p-2 text-left'>
-                    <h2 className='py-2 font-bold text-gradient text-[2.6rem] uppercase w-min'>Rugby</h2>
-                    <h2 className='font-bold text-[1.5rem]'>Horarios</h2>
+                    <h2 className='py-2 font-bold text-gradient text-[2.6rem] uppercase w-min'>Actividades</h2>
                     
                 </div>
             </motion.div>
 
             
-            <div className='grid md:grid-cols-2'>
-                {rugby.map((service, index) => {
+            <div className='grid md:grid-cols-2 lg:grid-cols-3'>
+                {actividades.map((service, index) => {
                 // destructure service
                 const { name, description, link, cardimage } = service;
                 return (
@@ -88,7 +87,7 @@ const Actividades = () => {
                             />
                             {/* title */}
                             <div className='absolute bottom-full left-12 
-                            group-hover:bottom-32 lg:group-hover:bottom-16 transition-all duration-700 z-50'>
+                            group-hover:bottom-16 lg:group-hover:bottom-16 transition-all duration-700 z-50'>
                             <span className='text-3xl font-bold text-gradient'>{name}</span>
                             </div>
                             {/* pretitle */}
@@ -99,8 +98,8 @@ const Actividades = () => {
                             {/* button */}
                             <div className='absolute bottom-full left-12 
                             group-hover:bottom-2 transition-all duration-700 z-50'>
-                                <a href={link} target='_blank' rel="noreferrer">
-                                    <button className='btn btn-sm'>Contactanos</button>
+                                <a href={link}>
+                                    <button className='btn btn-sm'>{name}</button>
                                 </a>
                             </div>
                         </div>
