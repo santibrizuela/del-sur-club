@@ -29,7 +29,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 text-center lg:text-start'
           >
-            <h2 className='h2 text-sky-200'>Del Sur Club</h2>
+            <h2 className='h2 text-sky-200 font-bold'>Del Sur Club</h2>
             <p className='mb-6'>
               En Del Sur Club, somos una familia unida por nuestra pasión compartida 
               por el <a href='/branding' className='font-bold menuNav'>Rugby</a> y 

@@ -8,7 +8,7 @@ import rugbyInfantil from '../assets/hockeyInfantil.png'
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
-// rugby data
+// actividades data
 const actividades = [
   
     

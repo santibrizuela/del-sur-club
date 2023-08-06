@@ -24,7 +24,7 @@ const Contact = () => {
               <h2 className='text-gradient font-bold text-[45px] lg:text-[86px] leading-none mb-8'>
                 Contacto
               </h2>
-              <a href='https://www.whatsapp.com/'>
+              <a target='_blank' rel='noreferrer' href='https://www.whatsapp.com/'>
                 <p className='flex menuNav'>
                   <FaWhatsapp className='my-auto mx-1'/> 11-2233-4455
                 </p>
@@ -34,7 +34,7 @@ const Contact = () => {
                   <AiOutlineMail className='my-auto mx-1'/> admin@delsurclub.com.ar
                 </p>
               </a>
-              <a href='https://goo.gl/maps/pa5rVDi5NxHcjc848'>
+              <a target='_blank' rel='noreferrer' href='https://goo.gl/maps/pa5rVDi5NxHcjc848'>
                 <p className='flex menuNav'>
                   <ImLocation className='my-auto mx-1'/> Diego A Maradona 9399
                 </p>

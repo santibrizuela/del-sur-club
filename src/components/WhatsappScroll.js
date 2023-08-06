@@ -32,7 +32,7 @@ const WhatsappScroll = () => {
       
       ${
         scrolled
-          ? 'block bg-green-500'
+          ? 'block bg-green-500 hover:bg-green-400'
           : 'hidden'
       }`}
     >
