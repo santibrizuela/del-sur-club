@@ -29,11 +29,11 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 text-center lg:text-start'
           >
-            <h2 className='h2 text-gradient'>Del Sur Club</h2>
+            <h2 className='h2 text-sky-200'>Del Sur Club</h2>
             <p className='mb-6'>
               En Del Sur Club, somos una familia unida por nuestra pasión compartida 
-              por el <a href='/branding' className='text-gradient'>Rugby</a> y 
-              el <a href='/branding' className='text-gradient'>Hockey</a>. Aquí, no solo practicamos deportes, sino que 
+              por el <a href='/branding' className='font-bold menuNav'>Rugby</a> y 
+              el <a href='/branding' className='font-bold menuNav'>Hockey</a>. Aquí, no solo practicamos deportes, sino que 
               también creamos amistades duraderas y cultivamos un ambiente de competencia 
               saludable. Unite a la Familia Sureña para ser parte de esta comunidad apasionada y comprometida.
             </p>
@@ -44,7 +44,7 @@ const About = () => {
                       Contactanos
                   </button>              
               </a>
-              <a href='/actividades' className='text-gradient font-bold'>
+              <a href='/actividades' className='font-bold menuNav text-sky-200'>
                 Actividades
               </a>
             </div>

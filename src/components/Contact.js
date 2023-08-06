@@ -3,8 +3,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, } from 'react-icons/fa';
 import { ImLocation } from 'react-icons/im';
+import { AiOutlineMail } from 'react-icons/ai';
 
 const Contact = () => {
   return (
@@ -17,12 +18,28 @@ const Contact = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 flex items-center mx-auto text-center lg:text-start'
+            className='flex items-center mx-auto text-center lg:text-start'
           >
             <div>
-              <h2 className='text-gradient font-bold text-[45px] lg:text-[90px] leading-none mb-2'>
-                Estemos en <br /> Contacto!
+              <h2 className='text-gradient font-bold text-[45px] lg:text-[86px] leading-none mb-8'>
+                Contacto
               </h2>
+              <a href='https://www.whatsapp.com/'>
+                <p className='flex menuNav'>
+                  <FaWhatsapp className='my-auto mx-1'/> 11-2233-4455
+                </p>
+              </a>
+              <a href='mailto:admin@delsurclub.com.ar'>
+                <p className='flex menuNav'>
+                  <AiOutlineMail className='my-auto mx-1'/> admin@delsurclub.com.ar
+                </p>
+              </a>
+              <a href='https://goo.gl/maps/pa5rVDi5NxHcjc848'>
+                <p className='flex menuNav'>
+                  <ImLocation className='my-auto mx-1'/> Diego A Maradona 9399
+                </p>
+              </a>
+
               
               {/* socials */}
               <motion.div 
@@ -42,7 +59,7 @@ const Contact = () => {
                         <FaInstagram/>
                     </div>
                 </a>    
-                <a target='_blank' rel='noreferrer' href='#contact'>
+                <a target='_blank' rel='noreferrer' href='https://goo.gl/maps/pa5rVDi5NxHcjc848'>
                     <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
                         <ImLocation/>
                     </div>
@@ -51,63 +68,21 @@ const Contact = () => {
             </div>
           </motion.div>
           {/* form */}
-          <div className='lg:w-[60%] scale-90 hover:scale-100 ease-in duration-300'>
-          
-            <motion.form 
-              action="https://formsubmit.co/brizuelasideravicius@gmail.com" 
-              method="POST"
-              variants={fadeIn('left', 0.3)}
-              initial='hidden'
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.3 }}
-              className='flex-1 border rounded-2xl flex flex-col gap-y-6 
-              pb-24 p-6 items-start'
-            >
-              
-              <input
-                className='bg-transparent border-b py-3 outline-none w-full 
-                placeholder:text-white focus:border-accent transition-all'
-                type='text'
-                name="name" 
-                required
-                placeholder='Nombre Completo'
-              />
-              <input
-                className='bg-transparent border-b py-3 outline-none w-full 
-                placeholder:text-white focus:border-accent transition-all'
-                type='text'
-                name="email" 
-                required
-                placeholder='Correo Electrónico'
-              />
-              <input
-                className='bg-transparent border-b py-3 outline-none w-full 
-                placeholder:text-white focus:border-accent transition-all'
-                type='text'
-                name="number" 
-                placeholder='Teléfono'
-              />
-              <input
-                className='bg-transparent border-b py-3 outline-none w-full 
-                placeholder:text-white focus:border-accent transition-all'
-                type='text'
-                name="subject" 
-                required
-                placeholder='Asunto'
-              />
-              <textarea 
-                className='bg-transparent border-b py-4 outline-none w-full 
-                placeholder:text-white focus:border-accent transition-all 
-                resize-none mb-10'
-                name="message" 
-                required
-                placeholder='Escribir mensaje...'
-              ></textarea>
-              <button 
-                className='btn btn-lg'
-                type='submit'
-                >Enviar</button>
-            </motion.form>
+          <div className='flex hover:scale-100 ease-in duration-300 md:h-[60vh] md:w-[60vw] mx-auto md:px-2'>
+
+            
+            
+            <motion.iframe 
+              variants={fadeIn('up', 0.7)} 
+              initial="hidden" 
+              whileInView={'show'} 
+              viewport={{once: false, amount: 0.7}}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104936.15253510738!2d-58.64822305664063!3d-34.7239721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf3b6aa6d3bf%3A0x47ebb03515fbd8fb!2sClub%20Del%20Sur!5e0!3m2!1ses-419!2ses!4v1691291812673!5m2!1ses-419!2ses" 
+              className='relative flex-shrink-0 w-full rounded-xl'
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+            ></motion.iframe>
 
           </div>
           

@@ -43,8 +43,8 @@ const Navbar = () => {
                 href='#contact'
                 className='uppercase'
             >
-                <button className='btn btn-lg btn-outline'>
-                    Asociate
+                <button className='btn btn-lg btn-outline flex items-center'>
+                    <ImLocation className='my-auto mx-1'/>Asociate 
                 </button>
             
             </a>
@@ -55,16 +55,16 @@ const Navbar = () => {
               
                 className={shadow ? 'hidden md:flex font-semibold text-light' : 'hidden md:flex font-semibold text-black'}>
                 <a href='/'>
-                  <li className='ml-10 text-sm uppercase menuNav'>Inicio</li>
+                  <li className='ml-10 text-sm uppercase menuNavbar'>Inicio</li>
                 </a>
                 <a href='/rugby'>
-                  <li className='ml-10 text-sm uppercase menuNav'>Rugby</li>
+                  <li className='ml-10 text-sm uppercase menuNavbar'>Rugby</li>
                 </a>
                 <a href='/hockey'>
-                  <li className='ml-10 text-sm uppercase menuNav'>Hockey</li>
+                  <li className='ml-10 text-sm uppercase menuNavbar'>Hockey</li>
                 </a>
-                <a href='/#contact'>
-                  <li className='ml-10 text-sm uppercase menuNav'>Contacto</li>
+                <a href='#contact'>
+                  <li className='ml-10 text-sm uppercase menuNavbar'>Contacto</li>
                 </a>
               </ul>
               {/* menu toggler */}
@@ -105,16 +105,16 @@ const Navbar = () => {
             <div className='py-4 flex flex-col'>
               <ul className='uppercase'>
                 <a href='/'>
-                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNav'>Inicio</li>
+                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Inicio</li>
                 </a>
                 <a href='/rugby'>
-                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNav'>Rugby</li>
+                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Rugby</li>
                 </a>
                 <a href='/hockey'>
-                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNav'>Hockey</li>
+                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Hockey</li>
                 </a>                
-                <a href='/#contact'>
-                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNav'>Contacto</li>
+                <a href='#contact'>
+                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Contacto</li>
                 </a>
               </ul>
               <div className='pt-30'>
@@ -130,7 +130,7 @@ const Navbar = () => {
                             <FaInstagram/>
                         </div>
                     </a>    
-                    <a target='_blank' rel='noreferrer' href='#contact'>
+                    <a target='_blank' rel='noreferrer' href='https://goo.gl/maps/pa5rVDi5NxHcjc848'>
                         <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
                             <ImLocation/>
                         </div>

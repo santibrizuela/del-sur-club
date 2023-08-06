@@ -48,12 +48,12 @@ const Services = () => {
         >
           <h2 className='h2 font-bold text-yellow-400 my-4'>Te Buscamos</h2>
           <h3 className='h3 lg:max-w-[455px] lg:mb-10'>
-            Tenemos<a href='/transporte' className='text-gradient'> Servicio de bus</a> ida y vuelta para que  
-            vengas a hacer tus<a href='/actividades' className='text-gradient'> Actividades</a> al club.
+            Tenemos<a href='/transporte' className='font-bold menuNav text-sky-200'> Servicio de bus</a> ida y vuelta para que  
+            vengas a hacer tus<a href='/actividades' className='font-bold menuNav text-sky-200'> Actividades</a> al club.
              
           </h3>
           <a href='/transporte'>
-            <button className='btn'>Ver mas</button>
+            <button className='btn btn-outline'>Ver mas</button>
           </a>
           
         </motion.div>

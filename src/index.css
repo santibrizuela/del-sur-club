@@ -69,7 +69,10 @@ html{
     @apply hover:text-gradient;
   }
   .menuNav{
-    @apply hover:text-yellow-600
+    @apply  text-sky-200 hover:text-yellow-600
+  }
+  .menuNavbar{
+    @apply  hover:text-yellow-600
   }
   .icolink{
     @apply hover:bg-gradient-to-r from-sky-600 to-yellow-600 hover:text-white

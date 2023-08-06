@@ -1,8 +1,8 @@
 import React from 'react'
 // image
-import topImage from '../assets/rugbyHeader3.jpg';
-import rugbyJuvenil from '../assets/rugbyJuvenil.png'
-import rugbyInfantil from '../assets/rugbyInfantil.png'
+import topImage from '../assets/recorridoCABA.jpeg';
+import recorridoCABA from '../assets/recorridoCABA.jpeg'
+import recorridoProvincia from '../assets/recorridoProvincia.jpeg'
 // motion
 import { motion } from 'framer-motion';
 // variants
@@ -12,18 +12,18 @@ const rugby = [
   
     
     {
-      name: 'Horarios',
+      name: 'CABA',
       description:
-       'Lunes: 20hs-22hs / Martes y Jueves: 20:30hs-22:30hs',
+       'Parque Chacabuco 17:45hs / Estación Plaza de los Virreyes 17:55hs / Au Dellepiane 18:05hs / Av Escalada 18:10hs / Larrazábal 18:15hs',
       link: '#contact',
-      cardimage: rugbyJuvenil,
+      cardimage: recorridoCABA,
     },
     {
-      name: 'Paradas',
+      name: 'Provincia',
       description:
-       'Martes y Jueves: 20:30hs-22:30hs / Sabados 10hs-12hs',
+       'Hermanos Maristas 18:05hs / Olavarría 18:15hs / Coto de Tapiales 18:20hs',
       link: '#contact',
-      cardimage: rugbyInfantil,
+      cardimage: recorridoProvincia,
     }
     
   ]
