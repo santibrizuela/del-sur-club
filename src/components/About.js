@@ -37,14 +37,16 @@ const About = () => {
             className='flex-1 text-center lg:text-start'
           >
             <h2 className='h2 text-gradient'>Del Sur Club</h2>
-            <h3 className='h3 mb-4'>
-              Nos dedicamos al <a href='/branding' className='text-gradient'>Diseño Gráfico</a>,
-              <a href='/webdevelopment' className='text-gradient'> Desarrollo Web</a> y 
-              <a href='/marketing' className='text-gradient'> Marketing</a> de Marcas.
-            </h3>
             <p className='mb-6'>
-              Insertamos, potenciamos y lanzamos marcas en línea.
-              Creamos soluciones impactantes y auténticas que conectan con tu audiencia y generan resultados excepcionales.
+              En Del Sur Club, somos una familia unida por nuestra pasión compartida 
+              por el <a href='/branding' className='text-gradient'>Rugby</a> y 
+              el <a href='/branding' className='text-gradient'>Hockey</a>. Aquí, no solo practicamos deportes, sino que 
+              también creamos amistades duraderas y cultivamos un ambiente de competencia 
+              saludable. Unite a la Familia Sureña para ser parte de esta comunidad apasionada y comprometida.
+
+
+
+
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12 justify-around'>
@@ -86,9 +88,13 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg btn-outline'>Contactanos</button>
-              <a href='/portfolio' className='text-gradient font-bold'>
-                Ver Portfolio
+              <a href='#contact'>
+                  <button className='btn btn-lg btn-outline'>
+                      Contactanos
+                  </button>              
+              </a>
+              <a href='/actividades' className='text-gradient font-bold'>
+                Actividades
               </a>
             </div>
           </motion.div>

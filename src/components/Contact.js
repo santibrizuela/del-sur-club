@@ -3,7 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { ImLocation } from 'react-icons/im';
 
 const Contact = () => {
   return (
@@ -31,17 +32,20 @@ const Contact = () => {
                 viewport={{once: false, amount: 0.7}}
                 className='flex-1 flex text-[20px] gap-x-6 my-6 max-w-max mx-auto lg:mx-2'
               >
-                <a href='https://www.instagram.com/digitalizamostumarca/' target='_blank' rel='noreferrer'>
-                  <FaInstagram className='icon-color'/>
+                <a target='_blank' rel='noreferrer' href='https://www.whatsapp.com/'>
+                    <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
+                        <FaWhatsapp/>
+                    </div>
                 </a>
-                <a href='https://github.com/santibrizuela/my-portfolio' target='_blank' rel='noreferrer'>
-                  <FaGithub className='icon-color'/>
-                </a>
-                <a href='https://ar.linkedin.com/company/brizuela-sideravicius' target='_blank' rel='noreferrer'>
-                  <FaLinkedin className='icon-color'/>
-                </a>
-                <a href='https://www.wa.link/x0lxo2' target='_blank' rel='noreferrer'>
-                  <FaWhatsapp className='icon-color'/>
+                <a target='_blank' rel='noreferrer' href='https://www.instagram.com/delsurclub/'>
+                    <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
+                        <FaInstagram/>
+                    </div>
+                </a>    
+                <a target='_blank' rel='noreferrer' href='#contact'>
+                    <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>
+                        <ImLocation/>
+                    </div>
                 </a>
               </motion.div>
             </div>

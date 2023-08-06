@@ -13,19 +13,19 @@ const Main = () => {
                             <AiOutlineWhatsApp/>
                         </div>
                     </a>
-                    <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/'>
-                        <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <ImLocation/>
-                        </div>
-                    </a>
-                    <a target='_blank' rel='noreferrer' href='https://www.instagram.com/'>
+                    <a target='_blank' rel='noreferrer' href='https://www.instagram.com/delsurclub/'>
                         <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <AiOutlineInstagram/>
                         </div>
                     </a>    
+                    <a target='_blank' rel='noreferrer' href='#contact'>
+                        <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <ImLocation/>
+                        </div>
+                    </a>
                 </div>
                 
-                <a href='/#services'>
+                <a href='/#contact'>
                     <div className='btn btn-lg'>
                         <p className='p-2'>Contactanos</p>
                     </div>
