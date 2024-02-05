@@ -63,8 +63,8 @@ const Navbar = () => {
                 <a href='/hockey'>
                   <li className='ml-10 text-sm uppercase menuNavbar'>Hockey</li>
                 </a>
-                <a href='#contact'>
-                  <li className='ml-10 text-sm uppercase menuNavbar'>Contacto</li>
+                <a href='/transporte'>
+                  <li className='ml-10 text-sm uppercase menuNavbar'>Transporte</li>
                 </a>
               </ul>
               {/* menu toggler */}
@@ -113,12 +113,12 @@ const Navbar = () => {
                 <a href='/hockey'>
                 <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Hockey</li>
                 </a>                
-                <a href='#contact'>
-                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Contacto</li>
+                <a href='/transporte'>
+                <li onClick={()=> setNav(false)} className='py-4 text-sm menuNavbar'>Transporte</li>
                 </a>
               </ul>
               <div className='pt-30'>
-                <p className='uppercase tracking-widest pt-10'>Conectemos</p>
+                <p className='uppercase tracking-widest pt-10'>Contacto</p>
                 <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                     <a target='_blank' rel='noreferrer' href='https://www.whatsapp.com/'>
                         <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 hover:scale-110 ease-in duration-300'>

@@ -31,11 +31,11 @@ const About = () => {
           >
             <h2 className='h2 text-sky-200 font-bold'>Del Sur Club</h2>
             <p className='mb-6'>
-              En Del Sur Club, somos una familia unida por nuestra pasión compartida 
+              En Del Sur somos una familia unida por nuestra pasión compartida 
               por el <a href='/branding' className='font-bold menuNav'>Rugby</a> y 
               el <a href='/branding' className='font-bold menuNav'>Hockey</a>. Aquí, no solo practicamos deportes, sino que 
-              también creamos amistades duraderas y cultivamos un ambiente de competencia 
-              saludable. Unite a la Familia Sureña para ser parte de esta comunidad apasionada y comprometida.
+              también buscamos formar de manera integral a nuestros socios y transmitir los valores de los deportes 
+              que practican.
             </p>
             
             <div className='flex gap-x-8 items-center'>

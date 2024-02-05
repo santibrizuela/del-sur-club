@@ -107,7 +107,7 @@ const Actividades = () => {
                 );
                 })}
             </div>
-        </div>
+          </div>
     </>
   )
 }
